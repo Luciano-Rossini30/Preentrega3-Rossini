@@ -6,7 +6,7 @@
 
 /* body */
 body {
-  background-image: url(./images/body.webp);
+  background-image: url(../images/body.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
