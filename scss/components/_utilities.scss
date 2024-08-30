@@ -1,0 +1,15 @@
+@mixin gradient-text($color1, $color2, $color3) {
+    background: linear-gradient(to right, $color1, $color2, $color3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  //animaciones//
+  a {
+    display: inline-block; // Necesario para que el transform funcione bien con el enlace
+    transition: transform 0.3s ease; // Animación suave para el cambio de tamaño
+  
+    &:hover {
+      transform: scale(1.1); // Aumenta el tamaño en un 10%
+    }
+  }

@@ -1,0 +1,57 @@
+//MIXINS
+.titulo {
+  @include gradient-text(#00FF00, #00BFFF, #0000FF); 
+  font-size: 2rem; 
+}
+.titulo-de-aproximacion {
+    @include gradient-text(#ff0055, #22c96d, #aeaecf);
+    font-size: 2rem; 
+  }
+//FIN MIXINS//
+
+
+/* media queries */
+@media (min-width: 992px) {
+    .titulo {
+        font-size: 50px;
+    }
+
+    .intro {
+        font-size: 30px;
+    }
+
+    .titulo-de-aproximacion {
+        font-size: 50px;
+        padding: 40px;
+    }
+
+    .p-supp {
+        font-size: 40px;
+    }
+
+    .p-supp_importante {
+        font-size: 30px;
+    }
+
+    .engage {
+        font-size: 50px;
+    }
+
+    .link-externo-supp {
+        font-size: 40px;
+        padding-bottom: 250px;
+    }
+
+    .p-grid {
+        font-size: 40px;
+    }
+
+    .grid {
+        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(3, 150px);
+    }
+
+    .carousel-item img {
+        max-width: 800px;
+    }
+}
